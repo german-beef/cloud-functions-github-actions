@@ -25,7 +25,7 @@ jobs:
         uses: google-github-actions/deploy-cloud-functions@main
         with:
           name: ger-test-cicd
-          runtime: python3.8
+          runtime: python3
           project_id: nubiral-oelsty
           entry_point: execute
 
