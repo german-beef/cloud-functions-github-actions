@@ -24,10 +24,10 @@ jobs:
         id: deploy
         uses: google-github-actions/deploy-cloud-functions@main
         with:
-          name: ILoveMkdev
-          runtime: java11
+          name: ger-test-cicd
+          runtime: Python 3.8
           project_id: nubiral-oelsty
-          entry_point: functions.ILoveMkdev
+          entry_point: execute
 
       - name: make the url aunthenticated
         run: |
