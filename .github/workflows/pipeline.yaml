@@ -12,7 +12,7 @@ jobs:
 
       - uses: actions/checkout@v2
 
-      - name: cicd-cloud-functions@nubiral-oelsty.iam.gserviceaccount.com
+      - name: Setup GCP Service Account
         uses: google-github-actions/setup-gcloud@v0
         with:
           project_id: ${{env.PROJECT}}
