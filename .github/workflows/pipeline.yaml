@@ -3,7 +3,7 @@ on:
   push:
     branches: [ main ]
 env:
-  PROJECT: Nubiral
+  PROJECT: nubiral-oelsty
 
 jobs:
   build:
@@ -32,7 +32,7 @@ jobs:
         run: |
           gcloud functions add-iam-policy-binding ILoveMkdev --member="allUsers" --role="roles/cloudfunctions.invoker"
 
-      - name: test the url
-        run: curl "${{ steps.deploy.outputs.url }}" 
+      #- name: test the url
+      #  run: curl "${{ steps.deploy.outputs.url }}" 
 
 
