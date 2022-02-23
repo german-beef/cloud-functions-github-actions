@@ -33,6 +33,6 @@ jobs:
           gcloud functions add-iam-policy-binding ILoveMkdev --member="allUsers" --role="roles/cloudfunctions.invoker"
 
       - name: test the url
-        run: curl "${{ steps.deploy.outputs.url }}"
+        run: curl "${{ steps.deploy.outputs.url }}" 
 
 
