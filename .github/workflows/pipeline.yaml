@@ -26,7 +26,7 @@ jobs:
         with:
           name: ILoveMkdev
           runtime: java11
-          project_id: mkdevyoutubee
+          project_id: nubiral-oelsty
           entry_point: functions.ILoveMkdev
 
       - name: make the url aunthenticated
